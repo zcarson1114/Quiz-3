@@ -29,8 +29,8 @@ class checkers : public game
 	void make_move(const std::string& move);
 	virtual void compute_moves(std::queue<std::string>& move) const;
 	virtual int evaluate() const;
-	int ascii_to_int(int code) const;
-	std::string i_to_s(int i) const;
+	static int ascii_to_int(int code) const;
+	static std::string i_to_s(int i) const;
 	private:
 	space board[8][8];
 };
