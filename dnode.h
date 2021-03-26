@@ -17,7 +17,7 @@ class dnode{
 
     const dnode *prev()const{return prev_link;}
     const dnode *next()const{return next_link;}
-    const T data()const{return datafield;}
+    const T data(){return datafield;}
 
     void set_next(dnode* n){next_link = n;}
     void set_prev(dnode* p){prev_link = p;}
